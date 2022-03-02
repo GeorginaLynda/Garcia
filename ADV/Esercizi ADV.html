@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizi ADV</title>
+</head>
+
+<body>
+
+    <!--ESERCIZIO 4-->
+    <script>
+        var cifra;
+        var cifra = prompt("Inserisci numero da contare");
+
+        var contaCifra = cifra.length;
+
+        document.write("La cifra è composta da" + " " + contaCifra);
+        console.log(contaCifra.length); 
+    </script>
+
+    <!--ESERCIZIO 3-->
+    <script>
+        var numero = prompt("inserisci il numero") * 1;
+        var resto = numero;
+
+        for (i = 0; i < numero; i++) {
+
+            document.write("le combinazioni sono:" + " " + i + " + " + resto);
+            if (i >= resto) {
+                i = numero;
+            }
+            document.write("<br>")
+            resto--;
+
+        }
+    </script>
+
+    <!--ESERCIZIO 4-->
+    <script>
+        var contatore = 0;
+        var numero = prompt("Dacci un numero da contare:");
+        while (numero != 0) {
+            numero = numero / 10;
+            numero = Math.round(numero);
+            contatore++;
+        }
+        alert("Il numero che hai scritto ha: " + contatore + " cifre");
+    </script>
+
+<!--scrivere un'unica funzione javascript in grado di calcolare le 4 operazioni fondamentali, 
+    accettando in ingresso 2 numeri e il segno dell'operazione-->
+
+</body>
+
+</html>

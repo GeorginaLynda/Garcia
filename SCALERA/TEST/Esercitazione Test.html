@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercitazione Test</title>
+    <link rel="stylesheet" href="Esercitazione Test.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button onclick="saluto()">Saluta</button>
+            <a href="https://www.uniba.it"><button>Uniba</button></a>
+            <button onclick="cambiaColore()">Cambia Colore</button>
+        </nav>
+    </header>
+    <h1></h1>
+    <p>ciao1</p>
+    <p>ciao2</p>
+    <p id="terzoParagrafo">ciao3</p>
+    <p>ciao4</p>
+    <p>ciao5</p>
+
+    <script>
+        function saluto() {
+            alert("Ciao");
+        }
+    </script>
+
+    <script>
+        function cambiaColore() {
+            document.getElementById("terzoParagrafo").style.color = "red";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESERCIZI DOM ED EVENTI</title>
+
+</head>
+<body>
+    <!--Scrivere un programma JS che al clic del mouse su un pulsante scambi il contenuto di due campi di testo-->
+    <nav>
+        <button onclick="cambiaContenuto()">Clicca qui per cambiare il contenuto</button>
+    </nav>
+    <section>
+        <p>Ciao a tutti</p>
+        <p id="secondoP">Ciao a tutti 2</p>
+        <p>Ciao a tutti 3</p>
+        <p id="ultimoP">Ciao a tutti ultimo</p>
+        
+    </section> <br /> <br />
+
+    <!--Scrivere un programma JS che inserendo un numero all'interno di un input HTML, al clic su un pulsante, 
+        sostituisca al numero il numero successivo se è pari, il numero precedente se dispari.-->
+
+    <form>
+        <label>Inserisci un numero</label> <br />
+        <input type="text" id="estrai">
+        
+    </form>
+    
+    <button onclick="cambiaNumero()">Clicca qui</button>
+
+    <p id="resto"></p>
+
+    <!--ESERCIZIO 1 SCRIPT-->
+    <script>
+        function cambiaContenuto() {
+    var dueP = document.getElementById("secondoP").innerHTML;
+    var quattroP = document.getElementById("ultimoP").innerHTML;
+
+    document.getElementById("secondoP").innerHTML = quattroP;
+    document.getElementById("ultimoP").innerHTML = dueP;
+}
+    </script>
+
+    <!--ESERCIZIO 2 SCRIPT-->
+    <script>
+        function cambiaNumero() {
+            var num= document.getElementById("estrai").value;
+            if (num% 2 == 0 ) {
+                num++;
+            }
+            else {
+                num--;
+            }
+          document.getElementById("resto").innerHTML= num;
+        }
+    </script>
+
+    
+</body>
+</html>

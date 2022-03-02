@@ -1,0 +1,45 @@
+
+header {
+    background-color: aqua;
+}
+/*Per il menu del nav*/
+nav li{
+    display: inline;
+    padding-left: 20px;
+    margin-left: 50px;
+    
+}
+/*Queste di seguito sono pseudo-classi*/
+a:hover{
+    background-color: blue;
+}
+a:focus{
+    background-color: brown;
+}
+a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+
+}
+ul{
+    list-style-type: symbols();
+}
+/*classe inserita nel h2 del secondo articolo, all'elenco numerato*/
+.listaordinataromana{
+    list-style-type: upper-roman;
+    list-style-position: outside;
+    list-style-image: url();
+}
+/*Stili di testo*/
+p{
+    text-align: center;
+    font-style: italic;
+    text-transform: capitalize;
+    text-decoration:overline;
+    letter-spacing: 20px;
+    word-spacing: 10px;
+    /*Ombreggiatura*/
+    text-shadow:4px 5px 9px greenyellow ;
+}

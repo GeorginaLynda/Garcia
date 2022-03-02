@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript1</title>
+    <!--Qui iniziamo Javascript-->
+    <script>
+        let nome = "Filippo";
+        nome = "Filippa";
+        console.log(nome);
+
+        const a = 3;
+        console.log(a);
+        /*
+        ERRORE COSTANTI
+        const a=3;
+        a=4;
+        */
+
+        let VariabileReale = 2.3;
+        console.log(VariabileReale);
+
+        let mesi = ["gennaio", "febbraio", "marzo"];
+        let i;
+        for (i = 0; i <= 2; i++) {
+            console.log(mesi[i]);
+        }
+        console.log(mesi);
+    </script>
+</head>
+
+<body>
+    <h1> </h1>
+
+    <!--Questo di seguito è un errore di trasformazione da entità numerica ad alfanumerica-->
+    <script>
+        let pippo = 0;
+        pippo = "ciao";
+        console.log(pippo);
+    </script>
+    <!---->
+
+    <script>
+        let variabileLet = "io sono Let";
+        var variabileVar = "io sono Var";
+        console.log(variabileLet);
+        console.log(variabileVar);
+    </script>
+
+    <script>
+        let prezzo = 300;
+        prezzo = String(prezzo); //Concatenazione tra variabili
+        let prezzo1 = 500;
+        console.log(prezzo + prezzo1); //Somma tra variabili
+        let articolo = "telefono";
+        articolo = "l'uomo gatto" + prezzo;
+        console.log(typeof prezzo);
+        console.log(typeof articolo);
+        console.log(articolo);
+
+        stringa = "uaglio";
+        console.log(typeof stringa);
+        numero = parseInt(stringa);
+        console.log(numero);
+        if (isNaN (numero))
+         {console.log("Errore! Non è un numero")}
+         else{console.log("ok")};
+
+         let dataNascita=new Date("08/19/1991");
+         console.log(dataNascita);
+         let oggi=new Date();
+         let vissuto=oggi-dataNascita;
+         console.log(vissuto);
+         let giorniVissuti=(((((oggi-dataNascita)/1000)/60)/60)/24);
+         console.log(giorniVissuti);
+         
+
+
+         domani=dataNascita+1;
+         console.log=(domani);
+    </script>
+
+
+</body>
+
+</html>

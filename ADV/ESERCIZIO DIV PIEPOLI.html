@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="It">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESERCIZIO DIV PIEPOLI</title>
+</head>
+<body>
+<div onmouseover="passaMouse()" onmouseout="togliMouse()" id="primo" style="background-color: white;" width="50%"; height="50%" border-top="black">Passa con il mouse qui</div> <br /><br /><br />
+<div onmouseover="passaMouseDue()" onmouseout="togliMouseDue()" id="secondo" style="background-color: black;" width="50%" height="50%" top="50%" left="50%">Oppure passa da qui</div>
+
+<script>
+    function passaMouse() {
+        document.getElementById("primo").style.backgroundColor="green";
+    }
+    function togliMouse() {
+        document.getElementById("primo").style.backgroundColor="white";   
+    }
+    function passaMouseDue() {
+        document.getElementById("secondo").style.backgroundColor="red";
+    }
+    function togliMouseDue() {
+        document.getElementById("secondo").style.backgroundColor="black";
+        
+    }
+</script>
+    
+</body>
+</html>

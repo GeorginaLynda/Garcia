@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funzioni</title>
+</head>
+
+<body>
+    <header>
+        <h1>Qui parleremo di funzioni</h1>
+    </header>
+    <!--Sotto Funzione per bottone cambia testo-->
+    <nav>
+        <p><button onclick="cambiaTesto()"> Cambia Testo</button> &nbsp; &nbsp; <!--questo è lo spazio-->
+            <button onclick="ripristina()">Ripristina</button> <br>
+            <button onclick="cambiaColore('yellow','black')">Cambia colore</button> &nbsp; 
+            <button onclick="apriFinestra()">Nuova Finestra</button>
+        </p>
+    </nav>
+    <section>
+        <p id="primoParagrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore placeat ducimus nulla
+            non,
+            dolor sunt mollitia
+            illum, cupiditate tenetur consequatur provident beatae, voluptatem omnis cum repudiandae quibusdam autem
+            nisi
+            facilis.</p>
+        <!--Qui comando colore con passaggio cursore-->
+        <p id="secondoParagrafo" onmouseover="mousePassaggio()" onmouseout="mouseUscita()">Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Perferendis quidem quia iure, adipisci sequi soluta
+            officiis vel sit enim aliquam provident ut nulla mollitia nesciunt voluptas tempora deleniti fugit
+            recusandae?
+        </p>
+        <p id="terzoParagrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae qui dolorem iure
+            mollitia, illo alias magnam
+            reprehenderit, ratione facere assumenda earum veniam quaerat nam recusandae ipsum. Quaerat saepe explicabo
+            similique!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sequi voluptate ad ratione aut dolorem
+            qui? Laborum
+            omnis, vero nobis, excepturi magni perferendis fugit, ratione veniam a porro sunt quos?</p>
+        <p id="ultimoParagrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolore distinctio
+            officiis
+            nemo harum
+            reiciendis, minima quaerat nostrum eligendi. In aliquam facilis aliquid sunt nesciunt repellat est labore
+            magnam? Eum.</p>
+    </section>
+
+    <script src="./Javascript/funzioni.js"> </script>
+
+
+</body>
+
+</html>

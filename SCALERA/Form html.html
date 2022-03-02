@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <Title> Nuovo File </Title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Mio stile.css">
+</head>
+
+<body>
+    <h1>Prima Form Web</h1>
+    <form action="https://www.uniba.it" method="post">
+        <fieldset>
+            <legend>Dati Anagrafici</legend>
+            <label>Cognome</label>
+            <input type="text" maxlength="10" size="30" placeholder="inserisci il tuo cognome" name="cognome">
+            <label>Nome</label>
+            <input type="text" maxlength="10" size="30" placeholder="inserisci il tuo nome" name="nome"><br />
+            <label>Provincia</label>
+            <select>
+                <option value="BA">Bari</option>
+                <option value="BT">BAT</option>
+                <option value="BR">Brindisi</option>
+                <option value="FG">Foggia</option>
+                <option value="LE">Lecce</option>
+                <option value="TA">Taranto</option>
+            </select> <br />
+            <label>Data di nascita</label>
+            <input type="date" name="datanascita"> <br />
+            <label>Email</label>
+            <input type="email" placeholder="email@email.it" name="email">
+            <label>Password</label>
+            <input type="password" name="password"> <br />
+            <label>Allega la tua foto</label>
+            <input type="file" name="allegato" multiple>
+        </fieldset>
+        <fieldset>
+            <legend>Indagine</legend>
+            <label>Che colore ti piace?</label>
+            <input type="color" name="colore"> <br />
+            <br />
+            <legend>Quanti libri leggi in un anno?</legend>
+            <input type="radio" name="libri" value="zerocinque"checked>0-5
+            <input type="radio"name="libri"value="seidieci">6-10
+            <input type="radio"name="libri"value="oltredieci">oltre 10 <br />
+            <br />
+            <legend>Che quotidiani leggi?
+            </legend>
+            <input type="checkbox" name="quotidiani" value="republica">Republica <br />
+            <input type="checkbox" name="quotidiani" value="corriere">Corriere della Sera <br />
+            <input type="checkbox" name="quotidiani" value="ilfatto">Il Fatto <br />
+            <input type="checkbox" name="quotidiani" value="lastampa">La Stampa <br />
+            <input type="checkbox" name="quotidiani" value="gdm">Gazzetta del Mezzogiorno <br />
+            <br />
+            <legend>Secondo te qual è il miglior quotidiano?</legend>
+            <input list="migliore">
+            <datalist id="migliore">
+                <option value="Repubblica"></option>
+                <option value="Corriere della Sera"></option>
+                <option value="Il Fatto"></option>
+                <option value="La Stampa"></option>
+                <option value="Gazzetta del Mezzogiorno"></option>
+            </datalist> <br />
+            <br />
+            <textarea rows="5" cols="40" name="commento">Hai commenti?</textarea>
+            
+
+        </fieldset>
+        <button type="sudmit">Invia</button><button type="reset">Reset</button>
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Condizione orario AND-->
+    <script>
+        var d = new Date();
+        var time = d.getHours();
+        if (time < 10) {
+            document.write("<b>Good Morning</b>")
+        }
+        else if (time >= 10 && time < 16) {
+            document.write("<b>Good Day</b>");
+        }
+        else {
+            document.write("<b>Hello World!!</b>");
+        }
+    </script>
+    <p>
+        This example demonstrates the if... else if..else statement.
+    </p>
+
+    <!--Operatore condizionale che assegna ad una variabile un valore od un altro in base ad una
+    determinata condizione-->
+    <script>
+        var semaforo = "rosso";
+        var azione = (semaforo == "rosso") ? "stop" : "avanti";
+        document.write(azione);
+    </script>
+    </br>
+    <br />
+
+    <!--Costrutto switch-->
+    <script>
+        var d = new Date();
+        var theDay = d.getDay;
+
+        switch (theDay) {
+            case 5:
+                document.write("<b>Finally</b>");
+                break;
+            case 6:
+                document.write("<b>Super Saturday");
+                break;
+            case 0:
+                document.write("<b>Sleepy Sunday");
+                break;
+            default:
+                document.write("<b> Fa cher ca vu</b>");
+        }
+    </script>
+    <br />
+    <br />
+
+    <!--CICLO FOR-->
+    <script>
+        for (i = 0; i <= 5; i++) {
+            document.write("The number is" + i);
+            document.write("<br />");
+        }
+
+    </script>
+    <br />
+    <br />
+
+    <!--CICLO WHILE-->
+    <script>
+        i = 0;
+        while (i <= 5) {
+            document.write("The number is" + i);
+            document.write("<br />");
+            i++;
+        }
+    </script>
+    <br />
+    <br />
+
+
+    <!--DETERMINAZIONE E RICERCA OGGETTI-->
+    <script>
+        var persona = {
+            nome: 'Giorgia',
+            cognome: 'Garcia',
+            altezza: 162,
+            nascita: new Date(1991, 8, 19),
+            indirizzo: {
+                Via: {
+                    strada: 'Via tal',
+                    numero: '5'
+                },
+                citta: 'Bari',
+                paese: 'Italia'
+            }
+        }
+        console.log(persona.indirizzo)
+        
+    </script>
+
+    <!--ARRAY DI OGGETTI IN CUI OGNI OGGETTO CONTIENE NOME, COGNOME, ETA-->
+    <script>
+        var studenti = [
+            {nome: "Giorgio", cognome: "Mastrota", eta: "10"},
+            {nome: "Mario", cognome: "Ruggiero", eta: "12"},
+            {nome: "Antonio", cognome: "Cassano", eta: "11"}
+        ]
+        studenti[1].nome 
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

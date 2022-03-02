@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seconda</title>
+
+    <!--Questa funzione serve per stampare la data-->
+    <script type="text/javascript">
+        function displayDate() {
+            document.getElementById("demo").innerHTML="<p>current date and time:" + Date() + "</p>"; 
+        }
+    </script>
+</head>
+<body>
+    <h1>My Second Web page with Javascript</h1>
+
+    <p id="demo">This is a paragragh.</p>
+    
+    <button type="button" onclick="displayDate()">Display Date</button>
+    
+</body>
+</html>
